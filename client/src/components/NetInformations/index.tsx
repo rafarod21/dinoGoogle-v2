@@ -1,24 +1,27 @@
 import React from 'react';
 
-import { Container, Content } from './styles';
+import dinoStop from '../../assets/images/dinoStop.png';
+
+import { Container, DinoIcon, Content, SuggestionsList } from './styles';
 
 const NetInformations: React.FC = () => {
   return (
     <Container>
-      {/* <DinoIcon /> */}
+      <DinoIcon src={dinoStop} />
       <header>
         <h1>Sem Internet</h1>
       </header>
 
       <Content>
-        Tente:
-        <ul>
-          <li>Verificar os cabos de rede, modem e roteador</li>
-          <li>Conectar à rede Wi-Fi novamente</li>
-        </ul>
+        <SuggestionsList>
+          <p>Tente:</p>
+          <ul>
+            <li>Verificar os cabos de rede, modem e roteador</li>
+            <li>Conectar à rede Wi-Fi novamente</li>
+          </ul>
+        </SuggestionsList>
+        <span>ERR_INTERNET_DISCONNECTED</span>
       </Content>
-
-      <text>ERR_INTERNET_DISCONNECTED</text>
 
     </Container>
   );

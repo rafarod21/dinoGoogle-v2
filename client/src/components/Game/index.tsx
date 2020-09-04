@@ -5,7 +5,7 @@ import { Container } from './styles';
 const Game: React.FC = () => {
   return (
     <Container>
-      aosdaodnaodnanoasd
+      
     </Container>
   );
 }
